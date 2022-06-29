@@ -3,7 +3,10 @@ import customerRouter from "./api-routes/customers.routes.mjs";
 import express from "express";
 import morgan from "morgan";
 
-var allowlist = ["http://localhost:3000"];
+var allowlist = [
+  "http://localhost:3000",
+  "https://digital-customers-web-app.vercel.app",
+];
 
 var corsOptionsDelegate = function (req, callback) {
   var corsOptions;
